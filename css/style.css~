@@ -1,0 +1,25 @@
+#weather-app{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+h1{
+	text-align:center;
+}
+
+#temp{
+	display:inline;
+}
+
+#scale-div{
+	display:inline;
+}
+
+#scale-div{
+	cursor:pointer;
+}
+
+#weather-icon{
+	width:50%;
+	height:auto;}
