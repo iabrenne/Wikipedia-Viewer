@@ -41,12 +41,15 @@ $(document).ready(function(){
 				$.getJSON(url,queryString,function(data){
 					myArr = Object.keys(data.query.pages);
 				
-					var myHtml = "";
-					myArr.forEach(function (value) {
+					/* Go through each wiki result and place it into its own div */
+					myArr.forEach(function (value, index) {
 						
-						myHtml = $("#results").html() + "<br>" + data.query.pages[value].title 
-						            + "<br>" + data.query.pages[value].extract + "<br>";	
-						$("#results").html(myHtml);				
+						var h2Div = "#res" + (index + 1) + ">h2";
+						var pDiv = "#res" + (index + 1) + ">p";
+
+						$(h2Div).html(data.query.pages[value].title);
+						$(pDiv).html(data.query.pages[value].extract);
+								
 					});
 
 				});
