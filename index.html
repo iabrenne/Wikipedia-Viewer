@@ -15,13 +15,19 @@
 		
 		<div id="search-div">
 			
-				<p> Click for Random Article:
+				<div id="random-div">Click for Random Wiki Article:
 					<a href = "https://en.wikipedia.org/wiki/Special:Random" target="_blank">
-						<span class="glyphicon glyphicon-random"></span> 
+						<span class="glyphicon glyphicon-random" data-toggle="tooltip" title="Random Article" data-placement="right"></span> 
 					</a>
-				</p>
-			</a>
-			<input id ="search-box" type="search">	
+				</div>
+				
+				<div id=search-box-div>
+					<input id ="search-box" type="search" placeholder="Search Wikipedia">	
+					<a href = "#" id="search-icon">
+						<span class="glyphicon glyphicon-search" data-toggle="tooltip" title="Search" data-placement="right"></span> 
+					</a>
+				</div>
+			
 		</div>
 
 		<div id=results>

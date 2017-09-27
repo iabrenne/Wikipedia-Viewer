@@ -1,19 +1,28 @@
 #search-div{
 	position: absolute; 
+	display:flex;
+	flex-direction: column;
+	justify-content:space-between;
 	margin: auto;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	width: 300px;
-	height: 100px; 
+	width: 225px;
+	height: 70px; 
 }
 
 #results{
 	position:absolute;
-	top:3vh;
+	top:8vh;
 }
 
-a{
-	text-decoration: none;
+#random-div{
+	display:flex;
+	justify-content:space-between;
+}
+
+#search-box-div{
+	display:flex;
+	justify-content:space-between;
 }
