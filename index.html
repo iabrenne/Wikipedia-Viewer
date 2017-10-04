@@ -2,13 +2,12 @@
 <html >
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1"charset="UTF-8">
-		<title>Wikipedia Viewer</title>
-		<link rel='stylesheet prefetch' href='https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css'>
-		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-		<link rel="stylesheet" href="css/style.css">
+		<title>Wikipedia Viewer</title>		
+		<link rel='stylesheet prefetch' href='https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css'>		
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">	
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 
 	<body>
@@ -16,24 +15,28 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src='js/index.js'></script>
 		
-		<div id="search-div">
+		<div id="search-div" class="w3-container w3-text-teal w3-large">
 			
-				<div id="random-div">Click for Random Wiki Article:
-					<a href = "https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+				<div id="random-div">
+
+					<p id="random-article-p">Random Article</p>
+				
+					<a id="search-a" href = "https://en.wikipedia.org/wiki/Special:Random" target="_blank">
 						<span class="fa fa-random fa-2x" data-toggle="tooltip" title="Random Article" data-placement="right"></span> 
 					</a>
 				</div>
 				
-				<div id=search-box-div>
+				<div id="search-box-div">
 					<input id ="search-box" type="search" placeholder="Search Wikipedia" class="w3-input">	
 					<a href = "#" id="search-icon">
 						<span class="fa fa-search fa-2x" data-toggle="tooltip" title="Search" data-placement="right"></span> 
-					</a>
+				    </a>
+					
 				</div>
 			
 		</div>
 
-		<div id=results>
+		<div id="results">
 
 			<a id="anchor1" target="_blank" href="#">
 				<div id="res1" class="w3-panel w3-padding-16">	

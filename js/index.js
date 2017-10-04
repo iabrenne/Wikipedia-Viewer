@@ -26,10 +26,13 @@ var searchIt = function() {
 		/* move search bar to the top to make room for search results */
 		$("#search-div").css("bottom","auto");
 		$("#search-div").css("top","1vw");
+		
 
 		/* GET request to wiki api for the topic selected */
 		$.getJSON(url,queryString,function(data){
 			myArr = Object.keys(data.query.pages);
+
+			$("#results").css("display","block");
 		
 			/* Go through each wiki result and place it into its own div */
 			myArr.forEach(function (value, index) {
@@ -39,7 +42,7 @@ var searchIt = function() {
 				var pDiv = "#res" + (index + 1) + ">p";
 				var link = data.query.pages[value].fullurl;
 
-				$("#res" + (index + 1)).addClass("w3-2017-shaded-spruce");
+				$("#res" + (index + 1)).addClass("w3-teal");
 				$(h2Div).html(data.query.pages[value].title);
 				$(pDiv).html(data.query.pages[value].extract);
 				$(aId).attr("href",link);
@@ -47,6 +50,8 @@ var searchIt = function() {
 			});
 
 		});
+
+
 
 	}
 
